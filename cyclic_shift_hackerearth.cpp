@@ -1,6 +1,10 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+/*
+currently not working as it should be
+
+*/
 int bD(string n)
 {
     string num = n;
