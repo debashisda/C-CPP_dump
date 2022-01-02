@@ -1,6 +1,14 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+/*
+method for counting zeros or ones
+time complexity is O(log n)
+
+version 2
+*/
+
+
 int countZeroes(int a[],int n,int l,int r)
 {
     int m=l+(r-l)/2;
