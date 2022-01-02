@@ -14,9 +14,9 @@ void delay(float s)
 void foo()
 {
 	for(int i = 0;; i++)
-    {
-		cout << "0\n";
-		delay(t);
+    	{
+	    cout << "0\n";
+	    delay(t);
 	}
 }
 
@@ -24,11 +24,11 @@ int main()
 {
 	auto f = []()
 	{
-		for(int i=0;;i++)
-        {
-			cout << "1\n";
-			delay(t);
-        }
+	   for(int i=0;;i++)
+           {
+	       cout << "1\n";
+	       delay(t);
+           }
 	};
 
 	thread th1(foo);
