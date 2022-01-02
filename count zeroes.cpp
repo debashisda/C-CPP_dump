@@ -1,6 +1,12 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+/*
+method for counting zeros or ones, without recurssion
+time complexity is O(log n)
+version 1
+*/
+
 int countZeroes(int a[],int n)
 {
     if(a[0]==0)
