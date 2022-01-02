@@ -8,6 +8,7 @@ void delay(float s)
     while(clock()<st+ms);
 }
 
+//nice and sexy version
 void main()
 {
     char *progress = "-\\|/";
@@ -19,27 +20,12 @@ void main()
             printf("%c%c%c]",8,8,progress[(i/100)%4]);
             delay(t);
         }
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*
-const char *progress = "-\\|/";
-
+//my approach
+void main()
+{
+    const char *progress = "-\\|/";
     char a='-';
     char b='\\';
     char c='|';
@@ -61,7 +47,7 @@ const char *progress = "-\\|/";
         printf("Loading...[%c]",c);
         delay(t);
         system("CLS");
-
+        
         printf("Loading...[%c]",d);
         delay(t);
         system("CLS");
@@ -70,15 +56,13 @@ const char *progress = "-\\|/";
             printf("%c%c%c]", 8, 8, progress[(i/100)%4] );
             delay(t);
         }
-
     }
-
-
         if(i % 100 == 0)
         {
             printf("%c%c%c", 8, 8, progress[(i/100)%4] );
             fflush(stdout);
         }
+}
 */
 
 
